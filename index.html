@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 40%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 5s;"></div>
+
+    <div class="container">
+        <div class="envelope-wrapper">
+            <!-- The Envelope -->
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body"></div>
+            </div>
+
+            <!-- Heart-shaped Seal Button -->
+            <button class="seal-btn" onclick="toggleEnvelope()">
+                <div class="seal-heart"></div>
+                <span class="seal-text">OPEN ME</span>
+            </button>
+
+            <!-- Message Card -->
+            <div class="message-card">
+                <h1>Happy Valentine's Day!</h1>
+                <p class="message">You will be forever my favourite Valentine, my girl ❤️</p>
+            </div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="close-btn" onclick="closeEnvelope()">CLOSE</button>
+
+        <!-- Music Controls -->
+        <div class="music-controls">
+            <button class="music-btn" onclick="playMusic()">▶ PLAY</button>
+            <button class="music-btn pause-btn" onclick="pauseMusic()">⏸ PAUSE</button>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="valentineAudio" loop>
+        <source src="https://github.com/robiningelbrecht/stratagems/raw/master/docs/audio/victory.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
